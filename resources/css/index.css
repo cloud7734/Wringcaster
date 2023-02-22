@@ -1,0 +1,172 @@
+html {
+    background-image: linear-gradient(to bottom right, #EBF5F4, #B5BDBC);
+    font-size: 16px;
+    font-family: 'Cormorant', serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+.bold {
+    font-family: 'Cormorant Unicase', serif;
+    font-weight: 700;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    background-color: #B5BDBC;
+    border-bottom: 1px solid black;
+    z-index: 100;
+}
+
+.header-logo {
+    height: 3rem;
+    width: 3rem;
+}
+
+.school-name {
+    font-size: 2rem;
+}
+
+#mission {
+    background-color: #66BFC555;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    line-height: 1.5rem;
+    border-top: 2px solid black;
+}
+
+#areas-of-study {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    background-color: #5C5C5C;
+    border-top: 2px solid black;
+}
+
+.study-card-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.study-title {
+    align-self: flex-start;
+    color: white;
+}
+
+.study-card {
+    padding: 0.5rem 0.25rem;
+}
+
+.study-card-centered-text {
+    font-family: 'Cormorant SC', serif;
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.study-card img {
+    opacity: 40%;
+    border: 2px solid gray;
+}
+
+#founders {
+    border-top: 2px solid black;
+    padding-bottom: 2rem;
+}
+
+.founder-section-title {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #052A2E33;
+}
+
+.founder-card-head {
+    padding: 0.5rem 0.25rem;
+    width: 60%;
+}
+
+.founder-card {
+    padding: 0.5rem 0.25rem;
+    width: 40%;
+}
+
+.founder-card img {
+    border: 2px solid gray;
+}
+
+.founder-card-head img {
+    border: 2px solid gray;
+}
+
+/* for mobile media */
+@media only screen and (max-width: 900px) {
+    header {
+        height: 3rem;
+    }
+    .nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-right: 0.5rem;
+    }
+    .nav li {
+        border: 1px dotted black;
+        border-radius: 0.5rem;
+        padding: 0 0.5rem;
+        line-height: 2rem;
+    }
+    .non-mobile {
+        display: none;
+    }
+    .school-name {
+        text-align: center;
+        padding-top: 5rem;
+        padding-bottom: 2rem;
+    }
+    #mission h2,
+    #mission p {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .study-card {
+        position: relative;
+        text-align: center;
+        min-width: 100px;
+    }    
+    .founder-card-section {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+}
+
+
+/* for larger screens */
+@media only screen and (min-width: 901px) {
+    html {
+        font-size: 1.5rem;
+    }
+    .mobile {
+        display: none;
+    }
+    .study-card {
+        position: relative;
+        text-align: center;
+        max-width: 300px;
+    }    
+}
