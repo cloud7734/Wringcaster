@@ -90,6 +90,11 @@ header {
     border: 2px solid gray;
 }
 
+#catalog-button {
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
 #founders {
     border-top: 2px solid black;
     padding-bottom: 2rem;
